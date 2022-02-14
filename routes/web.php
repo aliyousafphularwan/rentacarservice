@@ -29,3 +29,13 @@ Route::get('/locations', function () {
 Route::post('/rides', function(){
     return view('rides');
 });
+
+// user routes
+Route::get('/user/index', function(){
+    return view('user.home');
+});
+
+// admin routes
+Route::get('/admin/index', function(){
+    return view('admin.home');
+});
